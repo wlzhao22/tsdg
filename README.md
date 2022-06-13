@@ -1,5 +1,9 @@
 # TSDG
 
+## Introduction
+
+TSDG is an index graph for graph-based approximate nearest neighbor search, which is fast to build, efficient to search, and GPU friendly.
+
 ## Building
 
 ```shell
