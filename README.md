@@ -46,7 +46,7 @@ $ build/examples/scg_build \
 
 The following are the parameters used for building the augmented *k*-NN graphs on the CPU in our paper.
 
-| Dataset | *`k`* of *k*-NN graph | `SAMPLE_NUM` | `ITERATION_NUM` |
+| Dataset | *`K`* | `SAMPLE_NUM` | `ITERATION_NUM` |
 | :----  | :----: | :----: | :----: |
 | SIFT1M | 200 |  16  | 10 |
 | DEEP1M | 200 |  16  | 10 |
