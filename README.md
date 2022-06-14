@@ -44,7 +44,7 @@ $ build/examples/scg_build \
     ./data/sift1m/index/sift1m_scg.ivecs
 ```
 
-The following are the parameters used for building the augmented *k*-NN graphs on the CPU in our paper.
+The following are the parameters used for building the SC-graphs on the CPU in our paper.
 
 | Dataset | *`K`* | `SAMPLE_NUM` | `ITERATION_NUM` |
 | :----  | :----: | :----: | :----: |
@@ -59,9 +59,9 @@ The following are the parameters used for building the augmented *k*-NN graphs o
 
 The above datasets can be downloaded from http://corpus-texmex.irisa.fr/ and https://big-ann-benchmarks.com/
 
-#### **Step 2**. Convert the augmented *k*-NN graph to TSDG index
+#### **Step 2**. Convert the SC-graph to TSDG index
 
-Secondly, we will convert the augmented *k*-NN graph to the TSDG index.
+Secondly, we will convert the SC-graph to the TSDG index.
 
 You can use our example code to achieve this conversion as follows:
 ```shell
@@ -101,7 +101,7 @@ The following are the parameters used for building and searching experiments on 
 
 **Note**: The above parameter settings consider the efficiency of graph construction and the consistency of parameters. The search performance is better when the parameter RELAXED_FACTOR of T2I1M and SPACEV1M is 1.3, but it will increase the time of graph construction.
 
-The index graph building time (s) is shown below (including the *k*-NN graph building time):
+The index graph building time (s) is shown below (including the SC-graph and *k*-NN graph building time):
 
 | Dataset | `TSDG⁺` | `NSG` | `SSG` | `DPG` | `HNSW` |
 | :----  | ----: | ----: | ----: | ----: |  ----: |
