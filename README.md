@@ -40,20 +40,20 @@ An example:
 ```shell
 $ build/examples/scg_build \
     ./data/sift1m/sift1m_base.fvecs \
-    200 16 12 1 \
+    200 16 12\
     ./data/sift1m/index/sift1m_scg.ivecs
 ```
 
 The following are the parameters used for building the augmented *k*-NN graphs on the CPU in our paper.
 
-| Dataset | *`k`* of *k*-NN graph | `SAMPLE_NUM` | `ITERATION_NUM` | `ADD_SHORTCUTS` |
-| :----  | :----: | :----: | :----: | :----: |
-| SIFT1M | 200 |  16  | 10 | 1 |
-| DEEP1M | 200 |  16  | 10 | 1 |
-| T2I1M  | 400 |  16  | 10 | 1 |
-| SPACEV1M | 200 | 20 | 12 | 1 |
-| GIST1M   | 400 | 16 | 12 | 1 |
-| Turing1M | 200 | 20 | 15 | 1 |
+| Dataset | *`k`* of *k*-NN graph | `SAMPLE_NUM` | `ITERATION_NUM` |
+| :----  | :----: | :----: | :----: |
+| SIFT1M | 200 |  16  | 10 |
+| DEEP1M | 200 |  16  | 10 |
+| T2I1M  | 400 |  16  | 10 |
+| SPACEV1M | 200 | 20 | 12 |
+| GIST1M   | 400 | 16 | 12 |
+| Turing1M | 200 | 20 | 15 |
 
 **Note**: The above parameter settings consider the balance of building efficiency and search efficiency, appropriately increasing SAMPLE_NUM and ITERATION_NUM may improve the search efficiency.
 

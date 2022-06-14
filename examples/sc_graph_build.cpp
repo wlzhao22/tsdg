@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
     build_param.graph_k = atoi(argv[2]);
     build_param.sample_num = atoi(argv[3]);
     build_param.iteration_num = atoi(argv[4]);
-    output_file = argv[6];
+    output_file = argv[5];
   }
 
   float *dataset;
