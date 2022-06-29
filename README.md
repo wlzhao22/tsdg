@@ -27,7 +27,7 @@ The SC-graph need to be built in advance, we constructed SC-graph by modified NN
 You can use our example code to build the SC-graph as follows:
 
 ```shell
-$ build/examples/scg_build DATA_PATH K SAMPLE_NUM ITERATION_NUM ADD_SHORTCUTS OUTPUT_PATH
+$ build/examples/scg_build DATA_PATH K SAMPLE_NUM ITERATION_NUM OUTPUT_PATH
 ```
 
 + `DATA_PATH` is the path of the base data in `fvecs` format.
@@ -40,7 +40,7 @@ An example:
 ```shell
 $ build/examples/scg_build \
     ./data/sift1m/sift1m_base.fvecs \
-    200 16 12\
+    200 16 10\
     ./data/sift1m/index/sift1m_scg.ivecs
 ```
 
@@ -65,7 +65,7 @@ Secondly, we will convert the SC-graph to the TSDG index.
 
 You can use our example code to achieve this conversion as follows:
 ```shell
-$ build/examples/tsdg_build DATA_PATH SCG_PATH BUILD_MODE LE_THRESHOLD RANK_THRESHOLD MAX_EDGES OUTPUT_PATH
+$ build/examples/tsdg_build DATA_PATH SCG_PATH BUILD_MODE RELAXED_FACTOR RANK_THRESHOLD MAX_EDGES OUTPUT_PATH
 ```
 
 + `DATA_PATH` is the path of the base data in `fvecs` format.
