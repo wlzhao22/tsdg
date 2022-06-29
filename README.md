@@ -65,7 +65,7 @@ Secondly, we will convert the SC-graph to the TSDG index.
 
 You can use our example code to achieve this conversion as follows:
 ```shell
-$ build/examples/tsdg_build DATA_PATH SCG_PATH BUILD_MODE RELAXED_FACTOR RANK_THRESHOLD MAX_EDGES OUTPUT_PATH
+$ build/examples/tsdg_build DATA_PATH SCG_PATH RELAXED_FACTOR OCCL_THRESHOLD MAX_EDGES OUTPUT_PATH
 ```
 
 + `DATA_PATH` is the path of the base data in `fvecs` format.
