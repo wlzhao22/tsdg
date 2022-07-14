@@ -135,3 +135,8 @@ The performance of the search on the graph is shown below:
 # Search on the GPU
 
 Due to licensing issues, this library is not able to provide the code on the GPU, the GPU related code will be open source in the future.
+
+# Authors
+###### ranked by contributed number of code lines
+##### Hui Wang
+##### Wan-Lei Zhao
